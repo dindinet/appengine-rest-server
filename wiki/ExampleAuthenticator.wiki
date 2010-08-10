@@ -3,7 +3,7 @@
 
 = Overview =
 
-The Dispatcher supports custom authentication by plugging in a custom Authenticator.  Below is an example almost complete implementation of an Authenticator for doing HTTP Basic Authentication.  The missing piece (see the FIXME comment) is validating the given credentials against any stored information (the application would need to determine how to create and store these credentials).
+The Dispatcher supports custom authentication by plugging in a custom Authenticator.  Below is an almost complete, example implementation of an Authenticator for doing HTTP Basic Authentication.  The missing piece (see the FIXME comment) is validating the given credentials against any stored information (the application would need to determine how to create and store these credentials).
 
 = !BasicAuthenticator =
 

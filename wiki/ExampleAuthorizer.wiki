@@ -1,8 +1,9 @@
 #summary Example Authorizer implementation which authorizes based on a model field
+#labels Featured
 
 = Overview =
 
-The Dispatcher supports custom authorization by plugging in a custom Authorizer.  Below is an example implementation of an Authenticator controlling access to Model instances based on a UserProperty field named "owner" on every Model class.
+The Dispatcher supports custom authorization by plugging in a custom Authorizer.  Below is an example implementation of an Authenticator controlling access to Model instances based on a !UserProperty field named "owner" on every Model class.
 
 You would utilize this Authorizer by setting it on the Dispatcher:
 {{{

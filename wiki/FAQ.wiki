@@ -1,5 +1,5 @@
+#summary Frequently asked questions about the appengine rest server.
 #labels Featured,Phase-Support
-#Frequently asked questions about the appengine rest server.
 
 = FAQ =
 

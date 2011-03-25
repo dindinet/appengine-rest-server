@@ -5,3 +5,5 @@
 
   # *A !KeyError is raised the second time the REST uri is used.*
     * See comments for Issue 12
+  # *How do I format a List type?*
+    * See comments for Issue 26

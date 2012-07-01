@@ -1,5 +1,5 @@
 #summary Example Authorizer implementation which authorizes based on the current namespace
-#labels Featured
+#labels Featured,Phase-Implementation
 
 = Overview =
 

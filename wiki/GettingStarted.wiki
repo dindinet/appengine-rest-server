@@ -33,7 +33,7 @@ rest.Dispatcher.add_models({
   'bar' : (BarModel, ['GET_METADATA', 'GET', 'POST', 'PUT'],
   'cache' : (CacheModel, ['GET', 'DELETE'] })
 
-# use custom authentication/authorization
+# optionally use custom authentication/authorization
 rest.Dispatcher.authenticator = MyAuthenticator()
 rest.Dispatcher.authorizer = MyAuthorizer()
 

@@ -1,6 +1,8 @@
 #summary sidebar navigation
+#labels Phase-Implementation
 
 * Documentation
+  * [GettingStarted Getting Started]
   * [FAQ]
   * Example Code
     * [ExampleAuthenticator Simple Authenticator]

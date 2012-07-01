@@ -1,5 +1,5 @@
 #summary Example Authenticator implementation which does HTTP Basic Auth
-#labels Featured
+#labels Featured,Phase-Implementation
 
 = Overview =
 

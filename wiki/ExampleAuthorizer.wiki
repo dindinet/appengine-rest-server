@@ -1,5 +1,5 @@
 #summary Example Authorizer implementation which authorizes based on a model field
-#labels Featured
+#labels Featured,Phase-Implementation
 
 = Overview =
 

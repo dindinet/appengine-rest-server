@@ -1,0 +1,51 @@
+#summary Feature summary for the appengine rest server
+
+=Features=
+
+The appengine rest server has a wide range of features for interacting with Models.
+
+==Basic Features==
+    * Metadata browsing
+      * List models: `GET "/metadata"`
+      * Define model in XML Schema: `GET "/metadata/MyModel"`
+    * Reading data (XML output)
+      * Get specific instance: `GET "/MyModel/<key>"`
+      * Get all instances (paged results): `GET "/MyModel"`
+        * Results can be ordered using the "ordering" query param: `"?ordering=<propertyName>"`
+      * Find multiple instances (paged results): `GET "/MyModel?<queryParams>"`
+        * Results can be ordered (same as get all)
+    * Modifying data (XML input)
+      * Create new instance (returns key): `POST "/MyModel"`
+        * Supports batch create by surrounding multiple instances with `<list>` element (returns keys)
+      * Partial update instance (returns key): `POST "/MyModel/<key>"`
+        * Supports batch update (same as create)
+      * Complete update instance (returns key): `PUT "/MyModel/<key>"`
+        * Supports batch update (sames as create)
+      * Output of all update operations may be altered with "type" query param
+        * Return the keys in an XML format: `"?type=structured"`
+        * Return the entire updated models: `"?type=full"`
+      * Delete instance: `"DELETE "/MyModel/<key"`
+
+==Advanced Features==
+    * Working with individual properties
+      * Read single property: `GET "/MyModel/<key>/<propertyName>"`
+        * Output "Content-Type" header can be specified using input "Accept" header
+      * Read single element of list property: `GET "/MyModel/<key>/<propertyName>/<index>"`
+      * Write single property: `POST "/MyModel/<key>/<propertyName>"`
+        * Same output options as instance updates
+      * Write single element of list property: `POST "/MyModel/<key>/<propertyName>/<index>"`
+      * All blob types are _not_ Base64 encoded
+    * JSON support
+      * Specify JSON input using header: `"Content-Type: application/json"`
+      * Request JSON output using header: `"Accept: application/json"`
+      * [http://en.wikipedia.org/wiki/JSON#JSONP JSONP] support using "callback" query parameter: `"?callback=my_method"`
+    * Simulate HTTP PUT/DELETE using POST with header `"X-HTTP-Method-Override: <realMethod>"`
+    * Custom Authentication and Authorization (for multi-tenancy)
+    * Filter returned fields using "include_props" query parameter: `"?include_props=<prop1>,<prop2>,..."`
+    * Extended !BlobInfo support
+      * Include extra info (as attributes) in !BlobInfo reference property (creation, filename, etc.) using "blobinfo" query parameter: `"?blobinfo=info"`
+      * Download actual !BlobInfo data: `GET "/MyModel/<key>/<blobProperty>/content"`
+      * Upload !BlobInfo
+        # `POST "/MyModel/<key>/<blobProperty>/content` -> returns upload form
+        # `POST "<formUrl>"` (with actual data) -> redirect url
+        # `GET "<redirectUrl>"` -> normal update results

@@ -1,8 +1,8 @@
 #summary sidebar navigation
 
-* [GettingStarted Getting Started]
-* [FAQ]
-* Example Code
-  * [ExampleAuthenticator Simple Authenticator]
-  * [ExampleAuthorizer Simple Authorizer]
-  * [NamespaceAuthorizer Namespace-based Authorizer]
+  * [GettingStarted Getting Started]
+  * [FAQ]
+  * Example Code
+    * [ExampleAuthenticator Simple Authenticator]
+    * [ExampleAuthorizer Simple Authorizer]
+    * [NamespaceAuthorizer Namespace-based Authorizer]

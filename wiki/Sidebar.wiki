@@ -1,0 +1,8 @@
+#summary sidebar navigation
+
+* Documentation
+  * [FAQ]
+  * Example Code
+    * [ExampleAuthenticator Simple Authenticator]
+    * [ExampleAuthorizer Simple Authorizer]
+    * [NamespaceAuthorizer Namespace-based Authorizer]

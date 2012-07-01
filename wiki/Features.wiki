@@ -1,4 +1,5 @@
 #summary Feature summary for the appengine rest server
+#labels Featured
 
 =Features=
 

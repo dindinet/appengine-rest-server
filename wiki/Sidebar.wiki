@@ -6,4 +6,5 @@
     * [ExampleAuthenticator Simple Authenticator]
     * [ExampleAuthorizer Simple Authorizer]
     * [NamespaceAuthorizer Namespace-based Authorizer]
+  * [Changelog]
   * [FAQ]

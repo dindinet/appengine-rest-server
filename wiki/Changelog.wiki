@@ -1,6 +1,6 @@
 #summary Summary of changes for the appengine rest server
 #labels Featured
 
- * *[http://code.google.com/p/appengine-rest-server/issues/list?can=1&q=label:Milestone-Release-1.0.6%20status:Fixed&sort=-type Release 1.0.6]*
- * *[http://code.google.com/p/appengine-rest-server/issues/list?can=1&q=label:Milestone-Release-1.0.5%20status:Fixed&sort=-type Release 1.0.5]*
-* *[http://code.google.com/p/appengine-rest-server/issues/list?can=1&q=-milestone%20status:Fixed&sort=-type+-closed Older Releases]*
+  * *[http://code.google.com/p/appengine-rest-server/issues/list?can=1&q=label:Milestone-Release-1.0.6%20status:Fixed&sort=-type Release 1.0.6]*
+  * *[http://code.google.com/p/appengine-rest-server/issues/list?can=1&q=label:Milestone-Release-1.0.5%20status:Fixed&sort=-type Release 1.0.5]*
+  * *[http://code.google.com/p/appengine-rest-server/issues/list?can=1&q=-milestone%20status:Fixed&sort=-type+-closed Older Releases]*

@@ -1,5 +1,4 @@
 #summary sidebar navigation
-#labels Phase-Implementation
 
 * Documentation
   * [GettingStarted Getting Started]

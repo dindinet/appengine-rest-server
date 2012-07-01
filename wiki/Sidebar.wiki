@@ -1,9 +1,9 @@
 #summary sidebar navigation
 
   * [GettingStarted Getting Started]
+  * [Features]
   * Example Code
     * [ExampleAuthenticator Simple Authenticator]
     * [ExampleAuthorizer Simple Authorizer]
     * [NamespaceAuthorizer Namespace-based Authorizer]
-  * [Features]
   * [FAQ]

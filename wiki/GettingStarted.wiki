@@ -5,7 +5,7 @@
 
 ==Setup==
 
-Utilizing this library is extremely simple.  Assuming you have the library code installed under the directory "rest" within your application, you would add the following to your main application code:
+Utilizing this library is extremely simple.  Assuming you have the library code installed under the directory "rest" within your application (e.g. `"rest/__init__.py"`), you would add the following to your main application code:
 
 {{{
 import rest
